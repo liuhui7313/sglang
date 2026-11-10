@@ -568,5 +568,6 @@ POSITIONAL_FIELD_ORDER = (
     "allow_local_media_files",
     "paged_experts_host_memory_gb",
     "_max_running_requests_explicitly_set",
+    "shortest_prefill_aging_factor",
 )
 # fmt: on
