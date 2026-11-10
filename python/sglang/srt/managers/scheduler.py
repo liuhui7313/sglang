@@ -4507,6 +4507,7 @@ class Scheduler(
             return None, running_batch
 
         # Get priority queue
+        self.policy.poll_storage_prefetches(self.waiting_queue)
         self.waiting_queue.reorder(
             self.policy.calc_priority(
                 self.waiting_queue,
